@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "niki-mental-hig",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  },
+  // Required by Cloudflare Worker Previews: preview builds for non-main
+  // branches run `npx wrangler preview`, which fails without this block.
+  "previews": {}
+}

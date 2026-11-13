@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import settings from '../content/settings.json';
+---
+<Base lang="hu">
+  <main class="grid min-h-svh place-items-center text-center">
+    <div>
+      <p class="font-display text-6xl">404</p>
+      <p class="mt-4 text-muted">Az oldal nem található · Page not found</p>
+      <a href="/" class="btn-primary mt-8">{settings.name}</a>
+    </div>
+  </main>
+</Base>

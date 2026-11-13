@@ -1,0 +1,32 @@
+---
+import { getContent, type Lang } from '../lib/content';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const { site, settings } = getContent(lang);
+const socials = [
+  ['Instagram', settings.instagram], ['Facebook', settings.facebook], ['LinkedIn', settings.linkedin],
+].filter(([, url]) => url);
+---
+<section id="contact" class="section bg-ink text-white">
+  <div class="container-x text-center">
+    <h2 class="h2 mx-auto max-w-2xl">{site.contact.title}</h2>
+    <p class="mx-auto mt-4 max-w-xl text-white/75">{site.contact.text}</p>
+    <div class="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+      {settings.bookingUrl && <a href={settings.bookingUrl} class="btn-primary text-base">{site.contact.book}</a>}
+      {settings.phone && <a href={`tel:${settings.phone.replace(/\s/g, '')}`} class="btn-light text-base">{site.contact.call}: {settings.phone}</a>}
+      {settings.email && <a href={`mailto:${settings.email}`} class="btn border border-white/30 text-base hover:border-white">{settings.email}</a>}
+      {!settings.phone && !settings.email && !settings.bookingUrl && <p class="text-white/50">[TODO] phone / email</p>}
+    </div>
+    {socials.length > 0 && (
+      <div class="mt-8 flex justify-center gap-6 text-sm text-white/70">
+        {socials.map(([label, url]) => <a href={url} class="hover:text-white" rel="noopener">{label}</a>)}
+      </div>
+    )}
+  </div>
+</section>
+<footer class="bg-ink pb-10 text-sm text-white/50">
+  <div class="container-x border-t border-white/10 pt-8 text-center">
+    <p>{site.footer.privacy}</p>
+    <p class="mt-4">© {new Date().getFullYear()} {settings.name}</p>
+  </div>
+</footer>

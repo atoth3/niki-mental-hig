@@ -1,0 +1,29 @@
+---
+import { getContent, homePath, type Lang } from '../lib/content';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const { site, settings } = getContent(lang);
+const links: [string, string][] = [
+  ['about', site.nav.about], ['services', site.nav.services], ['process', site.nav.process],
+  ...(site.testimonials.items.length ? [['testimonials', site.nav.testimonials] as [string, string]] : []),
+  ['contact', site.nav.contact],
+];
+---
+<header id="top-bar" class="fixed inset-x-0 top-0 z-40 transition-colors duration-300 data-[solid]:bg-cream-50/90 data-[solid]:backdrop-blur data-[solid]:shadow-sm">
+  <div class="container-x flex h-16 items-center justify-between">
+    <a href={homePath(lang)} class="font-display text-2xl font-semibold tracking-tight text-ink">{settings.name}</a>
+    <nav class="hidden gap-7 text-sm font-medium md:flex">
+      {links.map(([id, label]) => <a href={`#${id}`} class="text-muted hover:text-ink">{label}</a>)}
+    </nav>
+    <div class="flex items-center gap-1 rounded-full bg-cream-200 p-1 text-xs font-semibold">
+      <a href="/" class:list={['rounded-full px-3 py-1', lang === 'hu' ? 'bg-white text-ink' : 'text-muted']}>HU</a>
+      <a href="/en/" class:list={['rounded-full px-3 py-1', lang === 'en' ? 'bg-white text-ink' : 'text-muted']}>EN</a>
+    </div>
+  </div>
+</header>
+<script>
+  const bar = document.getElementById('top-bar')!;
+  const update = () => bar.toggleAttribute('data-solid', window.scrollY > 40);
+  update();
+  window.addEventListener('scroll', update, { passive: true });
+</script>

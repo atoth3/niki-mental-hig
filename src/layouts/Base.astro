@@ -1,0 +1,36 @@
+---
+import '../styles/global.css';
+import { getImage } from 'astro:assets';
+import { getContent, homePath, imagesIn, type Lang } from '../lib/content';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const { site } = getContent(lang);
+// Social-share image: first hero image, else the first portrait (if any).
+const ogSrc = imagesIn('hero', 'portrait')[0]?.src;
+const ogUrl = ogSrc ? new URL((await getImage({ src: ogSrc, width: 1200, height: 630, format: 'jpg' })).src, Astro.site).href : undefined;
+const canonical = new URL(homePath(lang), Astro.site).href;
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{site.meta.title}</title>
+    <meta name="description" content={site.meta.description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="hu" href={new URL('/', Astro.site).href} />
+    <link rel="alternate" hreflang="en" href={new URL('/en/', Astro.site).href} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={site.meta.title} />
+    <meta property="og:description" content={site.meta.description} />
+    {ogUrl && <meta property="og:image" content={ogUrl} />}
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={lang === 'hu' ? 'hu_HU' : 'en_GB'} />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,23 @@
+---
+import { getContent, type Lang } from '../lib/content';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const { site } = getContent(lang);
+// Hidden until at least one testimonial is added in site.*.json → testimonials.items.
+const items = site.testimonials.items;
+---
+{items.length > 0 && (
+  <section id="testimonials" class="section bg-cream-100">
+    <div class="container-x">
+      <h2 class="h2">{site.testimonials.title}</h2>
+      <div class="mt-12 grid gap-6 md:grid-cols-2">
+        {items.map((t) => (
+          <figure class="rounded-3xl bg-white p-8">
+            <blockquote class="font-display text-xl leading-relaxed">„{t.quote}”</blockquote>
+            <figcaption class="mt-4 text-sm text-muted">— {t.name}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

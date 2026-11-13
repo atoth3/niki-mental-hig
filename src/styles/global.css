@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/fraunces';
+
+/* Brand colours & fonts – placeholder palette, change when the brand is decided. */
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fraunces Variable', ui-serif, Georgia, serif;
+
+  --color-cream-50: #fbf8f5;
+  --color-cream-100: #f4eee8;
+  --color-cream-200: #e8ddd3;
+  --color-ink: #262220;
+  --color-muted: #6b625d;
+  --color-accent: #8a4b3c;       /* terracotta */
+  --color-accent-dark: #6d3a2e;
+  --color-gold: #b08a4f;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { @apply bg-cream-50 text-ink font-sans antialiased; }
+
+@utility container-x { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
+@utility section { @apply py-20 sm:py-28; }
+@utility eyebrow { @apply text-xs font-semibold uppercase tracking-[0.2em] text-gold; }
+@utility h2 { @apply font-display text-3xl sm:text-5xl font-medium tracking-tight; }
+@utility btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition; }
+@utility btn-primary { @apply btn bg-accent text-white hover:bg-accent-dark; }
+@utility btn-light { @apply btn bg-white/90 text-ink hover:bg-white; }
+@utility btn-outline { @apply btn border border-ink/20 hover:border-ink/50; }

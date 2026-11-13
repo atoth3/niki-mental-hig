@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets';
+import { getContent, imagesIn, type Lang } from '../lib/content';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const { site } = getContent(lang);
+// Optional image on the right: first file in src/assets/images/hero/. Without one, a soft placeholder shape is shown.
+const photo = imagesIn('hero')[0]?.src;
+---
+<section class="relative overflow-hidden bg-cream-100">
+  <div class="container-x grid min-h-[88svh] items-center gap-12 pb-16 pt-28 md:grid-cols-2">
+    <div>
+      <p class="eyebrow">{site.hero.eyebrow}</p>
+      <h1 class="mt-4 font-display text-4xl font-medium leading-tight sm:text-6xl">{site.hero.title}</h1>
+      <p class="mt-5 max-w-xl text-lg text-muted">{site.hero.subtitle}</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#contact" class="btn-primary">{site.hero.cta}</a>
+        <a href="#about" class="btn-outline">{site.hero.ctaSecondary}</a>
+      </div>
+    </div>
+    <div class="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2.5rem] bg-cream-200">
+      {photo
+        ? <Image src={photo} alt="" widths={[480, 800, 1200]} sizes="(min-width: 768px) 28rem, 100vw" loading="eager" fetchpriority="high" class="h-full w-full object-cover" />
+        : <div class="absolute inset-0 bg-gradient-to-br from-accent/25 via-gold/15 to-cream-200"></div>}
+    </div>
+  </div>
+</section>

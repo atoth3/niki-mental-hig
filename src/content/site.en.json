@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "[TODO] Niki – mental wellbeing support",
+    "description": "[TODO] One-sentence introduction for search engines and sharing."
+  },
+  "nav": { "about": "About", "services": "How I help", "process": "How I work", "testimonials": "Testimonials", "contact": "Contact" },
+  "hero": {
+    "eyebrow": "[TODO] Mental wellbeing",
+    "title": "[TODO] Main message in one sentence",
+    "subtitle": "[TODO] Short subtitle: who you help and how.",
+    "cta": "Get in touch",
+    "ctaSecondary": "About me"
+  },
+  "about": {
+    "title": "About me",
+    "paragraphs": [
+      "[TODO] Introduction – first paragraph.",
+      "[TODO] Introduction – second paragraph (qualifications, experience)."
+    ],
+    "facts": [
+      { "value": "[TODO]", "label": "years of experience" },
+      { "value": "[TODO]", "label": "qualification" },
+      { "value": "[TODO]", "label": "online and in person" }
+    ]
+  },
+  "services": {
+    "title": "How I help",
+    "intro": "[TODO] Short introduction.",
+    "items": [
+      { "title": "[TODO] Service 1", "text": "[TODO] Short description." },
+      { "title": "[TODO] Service 2", "text": "[TODO] Short description." },
+      { "title": "[TODO] Service 3", "text": "[TODO] Short description." }
+    ]
+  },
+  "process": {
+    "title": "How I work",
+    "steps": [
+      { "title": "First contact", "text": "[TODO] Short description." },
+      { "title": "Getting to know each other", "text": "[TODO] Short description." },
+      { "title": "Working together", "text": "[TODO] Short description." }
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "items": []
+  },
+  "contact": {
+    "title": "Let's talk",
+    "text": "[TODO] Short, inviting text for getting in touch.",
+    "call": "Call",
+    "email": "Email",
+    "book": "Book a session"
+  },
+  "footer": {
+    "privacy": "This site collects no personal data and uses no cookies."
+  }
+}

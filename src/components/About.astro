@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets';
+import { getContent, imagesIn, type Lang } from '../lib/content';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const { site, settings } = getContent(lang);
+const portrait = imagesIn('portrait')[0]?.src;
+---
+<section id="about" class="section">
+  <div class="container-x grid items-center gap-12 md:grid-cols-[2fr_3fr]">
+    <div class="mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-full bg-cream-200">
+      {portrait && <Image src={portrait} alt={settings.name} widths={[400, 800]} sizes="24rem" class="h-full w-full object-cover" />}
+    </div>
+    <div>
+      <h2 class="h2">{site.about.title}</h2>
+      {site.about.paragraphs.map((p) => <p class="mt-5 text-lg leading-relaxed text-muted">{p}</p>)}
+      <div class="mt-10 grid grid-cols-3 gap-4 border-t border-cream-200 pt-8">
+        {site.about.facts.map((f) => (
+          <div>
+            <div class="font-display text-2xl font-medium">{f.value}</div>
+            <div class="mt-1 text-sm text-muted">{f.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

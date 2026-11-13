@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "[TODO] Niki – mentálhigiénés segítő",
+    "description": "[TODO] Egymondatos bemutatkozás a keresőknek és megosztáshoz."
+  },
+  "nav": { "about": "Rólam", "services": "Miben segítek", "process": "Hogyan dolgozom", "testimonials": "Vélemények", "contact": "Kapcsolat" },
+  "hero": {
+    "eyebrow": "[TODO] Mentálhigiéné",
+    "title": "[TODO] Fő üzenet egy mondatban",
+    "subtitle": "[TODO] Rövid alcím: kinek és miben segítesz.",
+    "cta": "Kapcsolatfelvétel",
+    "ctaSecondary": "Rólam"
+  },
+  "about": {
+    "title": "Rólam",
+    "paragraphs": [
+      "[TODO] Bemutatkozás – első bekezdés.",
+      "[TODO] Bemutatkozás – második bekezdés (végzettség, tapasztalat)."
+    ],
+    "facts": [
+      { "value": "[TODO]", "label": "év tapasztalat" },
+      { "value": "[TODO]", "label": "végzettség" },
+      { "value": "[TODO]", "label": "online és személyesen" }
+    ]
+  },
+  "services": {
+    "title": "Miben segítek",
+    "intro": "[TODO] Rövid bevezető.",
+    "items": [
+      { "title": "[TODO] Szolgáltatás 1", "text": "[TODO] Rövid leírás." },
+      { "title": "[TODO] Szolgáltatás 2", "text": "[TODO] Rövid leírás." },
+      { "title": "[TODO] Szolgáltatás 3", "text": "[TODO] Rövid leírás." }
+    ]
+  },
+  "process": {
+    "title": "Hogyan dolgozom",
+    "steps": [
+      { "title": "Első kapcsolat", "text": "[TODO] Rövid leírás." },
+      { "title": "Megismerkedés", "text": "[TODO] Rövid leírás." },
+      { "title": "Közös munka", "text": "[TODO] Rövid leírás." }
+    ]
+  },
+  "testimonials": {
+    "title": "Vélemények",
+    "items": []
+  },
+  "contact": {
+    "title": "Beszélgessünk",
+    "text": "[TODO] Rövid, hívogató szöveg a kapcsolatfelvételhez.",
+    "call": "Hívás",
+    "email": "E-mail",
+    "book": "Időpontfoglalás"
+  },
+  "footer": {
+    "privacy": "Az oldal nem gyűjt személyes adatot és nem használ sütiket."
+  }
+}
