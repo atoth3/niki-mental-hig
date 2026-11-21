@@ -17,12 +17,12 @@
     "role": "Mental health professional, grief group facilitator, mediator",
     "paragraphs": [
       "[TODO] Introduction – first paragraph.",
-      "[TODO] Introduction – second paragraph (qualifications, experience)."
+      "In 2021 I completed the mediator training at Budapest Metropolitan University, in 2024 the mental health professional programme at Budapest Business University, and in 2026 the grief companion course of the Napfogyatkozás Association."
     ],
     "facts": [
-      { "value": "[TODO]", "label": "years of experience" },
-      { "value": "[TODO]", "label": "qualification" },
-      { "value": "[TODO]", "label": "online and in person" }
+      { "value": "2021", "label": "Mediator – Budapest Metropolitan University" },
+      { "value": "2024", "label": "Mental health professional – Budapest Business University" },
+      { "value": "2026", "label": "Grief companion – Napfogyatkozás Association" }
     ]
   },
   "services": {

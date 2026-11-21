@@ -17,12 +17,12 @@
     "role": "mentálhigiénés szakember, gyászcsoport-kísérő, mediátor",
     "paragraphs": [
       "[TODO] Bemutatkozás – első bekezdés.",
-      "[TODO] Bemutatkozás – második bekezdés (végzettség, tapasztalat)."
+      "2021-ben elvégeztem a Metropolitan Egyetem mediátor képzését, 2024-ben a Budapesti Gazdasági Egyetemen a mentálhigiénés szakember képzést, 2026-ban pedig a Napfogyatkozás Egyesület gyászkísérő tanfolyamát."
     ],
     "facts": [
-      { "value": "[TODO]", "label": "év tapasztalat" },
-      { "value": "[TODO]", "label": "végzettség" },
-      { "value": "[TODO]", "label": "online és személyesen" }
+      { "value": "2021", "label": "Mediátor – Metropolitan Egyetem" },
+      { "value": "2024", "label": "Mentálhigiénés szakember – Budapesti Gazdasági Egyetem" },
+      { "value": "2026", "label": "Gyászkísérő – Napfogyatkozás Egyesület" }
     ]
   },
   "services": {

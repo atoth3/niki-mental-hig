@@ -53,6 +53,7 @@ Rules:
 ## Images
 - `hero/` – optional photo on the right side of the top section (first file by name). Empty → soft colour placeholder.
 - `portrait/` – portrait in the "About" section (first file by name). Also the social-share image if `hero/` is empty.
+- `brand/logo.webp` – logo in the header (transparent; replace the file to change it). Logo green is about #627030.
 - `gallery/` – reserved, not shown yet.
 - Lowercase file names, no spaces or accents. Resize anything over ~3000 px before committing. Astro optimises for the web.
 

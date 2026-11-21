@@ -1,5 +1,6 @@
 ---
-import { getContent, homePath, type Lang } from '../lib/content';
+import { Image } from 'astro:assets';
+import { getContent, homePath, imagesIn, type Lang } from '../lib/content';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const { site, settings } = getContent(lang);
@@ -10,8 +11,11 @@ const links: [string, string][] = [
 ];
 ---
 <header id="top-bar" class="fixed inset-x-0 top-0 z-40 transition-colors duration-300 data-[solid]:bg-cream-50/90 data-[solid]:backdrop-blur data-[solid]:shadow-sm">
-  <div class="container-x flex h-16 items-center justify-between">
-    <a href={homePath(lang)} class="font-display text-2xl font-semibold tracking-tight text-ink">{settings.name}</a>
+  <div class="container-x flex h-20 items-center justify-between">
+    <a href={homePath(lang)} aria-label={settings.name}>
+      <!-- Logo: src/assets/images/brand/logo.webp (transparent). Replace the file to change it. -->
+      <Image src={imagesIn('brand')[0].src} alt={settings.name} widths={[200, 400]} sizes="160px" loading="eager" class="h-14 w-auto sm:h-16" />
+    </a>
     <nav class="hidden gap-7 text-sm font-medium md:flex">
       {links.map(([id, label]) => <a href={`#${id}`} class="text-muted hover:text-ink">{label}</a>)}
     </nav>
