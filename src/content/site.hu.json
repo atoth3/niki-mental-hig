@@ -5,9 +5,9 @@
   },
   "nav": { "about": "Rólam", "services": "Miben segítek", "process": "Hogyan dolgozom", "testimonials": "Vélemények", "contact": "Kapcsolat" },
   "hero": {
-    "eyebrow": "[TODO] Mentálhigiéné",
-    "title": "[TODO] Fő üzenet egy mondatban",
-    "subtitle": "[TODO] Rövid alcím: kinek és miben segítesz.",
+    "eyebrow": "Mentálhigiéné · Gyászkísérés · Mediáció",
+    "title": "Szívvel kísérlek",
+    "subtitle": "A veszteségben, a változásban és a konfliktusokban is – hogy ne egyedül kelljen végigmenned a nehéz időszakokon.",
     "cta": "Kapcsolatfelvétel",
     "ctaSecondary": "Rólam"
   },

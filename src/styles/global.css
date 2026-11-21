@@ -2,19 +2,19 @@
 @import '@fontsource-variable/inter';
 @import '@fontsource-variable/fraunces';
 
-/* Brand colours & fonts – placeholder palette, change when the brand is decided. */
+/* Brand colours & fonts – olive green taken from the TN logo (≈ #627030), on warm sage-cream. */
 @theme {
   --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Fraunces Variable', ui-serif, Georgia, serif;
 
-  --color-cream-50: #fbf8f5;
-  --color-cream-100: #f4eee8;
-  --color-cream-200: #e8ddd3;
-  --color-ink: #262220;
-  --color-muted: #6b625d;
-  --color-accent: #8a4b3c;       /* terracotta */
-  --color-accent-dark: #6d3a2e;
-  --color-gold: #b08a4f;
+  --color-cream-50: #f9f9f3;
+  --color-cream-100: #f1f2e7;
+  --color-cream-200: #e2e6d2;
+  --color-ink: #23261d;
+  --color-muted: #5e6457;
+  --color-accent: #627030;       /* logo olive green */
+  --color-accent-dark: #4a5523;
+  --color-gold: #7a8a3e;         /* lighter olive for small labels */
 }
 
 html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
