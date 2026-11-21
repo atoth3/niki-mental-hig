@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "[TODO] Niki – mentálhigiénés segítő",
+    "title": "Tóth Nikol – mentálhigiénés szakember",
     "description": "[TODO] Egymondatos bemutatkozás a keresőknek és megosztáshoz."
   },
   "nav": { "about": "Rólam", "services": "Miben segítek", "process": "Hogyan dolgozom", "testimonials": "Vélemények", "contact": "Kapcsolat" },
@@ -13,6 +13,8 @@
   },
   "about": {
     "title": "Rólam",
+    "name": "Tóth Nikol",
+    "role": "mentálhigiénés szakember, gyászcsoport-kísérő, mediátor",
     "paragraphs": [
       "[TODO] Bemutatkozás – első bekezdés.",
       "[TODO] Bemutatkozás – második bekezdés (végzettség, tapasztalat)."

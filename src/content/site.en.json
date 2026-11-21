@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "[TODO] Niki – mental wellbeing support",
+    "title": "Nikol Tóth – mental health professional",
     "description": "[TODO] One-sentence introduction for search engines and sharing."
   },
   "nav": { "about": "About", "services": "How I help", "process": "How I work", "testimonials": "Testimonials", "contact": "Contact" },
@@ -13,6 +13,8 @@
   },
   "about": {
     "title": "About me",
+    "name": "Nikol Tóth",
+    "role": "Mental health professional, grief group facilitator, mediator",
     "paragraphs": [
       "[TODO] Introduction – first paragraph.",
       "[TODO] Introduction – second paragraph (qualifications, experience)."
