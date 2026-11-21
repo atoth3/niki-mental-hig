@@ -1,26 +1,28 @@
 {
   "meta": {
-    "title": "[TODO] Niki – mentálhigiénés segítő",
+    "title": "Tóth Nikol – mentálhigiénés szakember",
     "description": "[TODO] Egymondatos bemutatkozás a keresőknek és megosztáshoz."
   },
   "nav": { "about": "Rólam", "services": "Miben segítek", "process": "Hogyan dolgozom", "testimonials": "Vélemények", "contact": "Kapcsolat" },
   "hero": {
-    "eyebrow": "[TODO] Mentálhigiéné",
-    "title": "[TODO] Fő üzenet egy mondatban",
-    "subtitle": "[TODO] Rövid alcím: kinek és miben segítesz.",
+    "eyebrow": "Mentálhigiéné · Gyászkísérés · Mediáció",
+    "title": "Szívvel, figyelemmel, melletted",
+    "subtitle": "A veszteségben, a változásban és a konfliktusokban is – hogy ne egyedül kelljen végigmenned a nehéz időszakokon.",
     "cta": "Kapcsolatfelvétel",
     "ctaSecondary": "Rólam"
   },
   "about": {
     "title": "Rólam",
+    "name": "Tóth Nikol",
+    "role": "mentálhigiénés szakember, gyászcsoport-kísérő, mediátor",
     "paragraphs": [
       "[TODO] Bemutatkozás – első bekezdés.",
-      "[TODO] Bemutatkozás – második bekezdés (végzettség, tapasztalat)."
+      "2021-ben elvégeztem a Metropolitan Egyetem mediátor képzését, 2024-ben a Budapesti Gazdasági Egyetemen a mentálhigiénés szakember képzést, 2026-ban pedig a Napfogyatkozás Egyesület gyászkísérő tanfolyamát."
     ],
     "facts": [
-      { "value": "[TODO]", "label": "év tapasztalat" },
-      { "value": "[TODO]", "label": "végzettség" },
-      { "value": "[TODO]", "label": "online és személyesen" }
+      { "value": "2021", "label": "Mediátor – Metropolitan Egyetem" },
+      { "value": "2024", "label": "Mentálhigiénés szakember – Budapesti Gazdasági Egyetem" },
+      { "value": "2026", "label": "Gyászkísérő – Napfogyatkozás Egyesület" }
     ]
   },
   "services": {

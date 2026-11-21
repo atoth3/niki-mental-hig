@@ -1,26 +1,28 @@
 {
   "meta": {
-    "title": "[TODO] Niki – mental wellbeing support",
+    "title": "Nikol Tóth – mental health professional",
     "description": "[TODO] One-sentence introduction for search engines and sharing."
   },
   "nav": { "about": "About", "services": "How I help", "process": "How I work", "testimonials": "Testimonials", "contact": "Contact" },
   "hero": {
-    "eyebrow": "[TODO] Mental wellbeing",
-    "title": "[TODO] Main message in one sentence",
-    "subtitle": "[TODO] Short subtitle: who you help and how.",
+    "eyebrow": "Mental wellbeing · Grief support · Mediation",
+    "title": "With heart, with care, beside you",
+    "subtitle": "Through loss, change and conflict – so you don't have to face difficult times alone.",
     "cta": "Get in touch",
     "ctaSecondary": "About me"
   },
   "about": {
     "title": "About me",
+    "name": "Nikol Tóth",
+    "role": "Mental health professional, grief group facilitator, mediator",
     "paragraphs": [
       "[TODO] Introduction – first paragraph.",
-      "[TODO] Introduction – second paragraph (qualifications, experience)."
+      "In 2021 I completed the mediator training at Budapest Metropolitan University, in 2024 the mental health professional programme at Budapest Business University, and in 2026 the grief companion course of the Napfogyatkozás Association."
     ],
     "facts": [
-      { "value": "[TODO]", "label": "years of experience" },
-      { "value": "[TODO]", "label": "qualification" },
-      { "value": "[TODO]", "label": "online and in person" }
+      { "value": "2021", "label": "Mediator – Budapest Metropolitan University" },
+      { "value": "2024", "label": "Mental health professional – Budapest Business University" },
+      { "value": "2026", "label": "Grief companion – Napfogyatkozás Association" }
     ]
   },
   "services": {
